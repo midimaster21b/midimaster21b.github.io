@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# Hello
+# Hello [Warning: Site Currently Being Remodelled as of October 20, 2018]
 
 ## About Me
 
