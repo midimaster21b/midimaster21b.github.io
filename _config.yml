@@ -1,4 +1,7 @@
 theme: jekyll-theme-cayman
+google_analytics: UA-22750309-1
+title: Joshua Edgcombe
+description: Electrical Engineer & Software Developer
 
 collections:
   authors:

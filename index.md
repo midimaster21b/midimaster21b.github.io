@@ -2,7 +2,6 @@
 layout: default
 title: Home
 description: Electrical Engineer & Software Developer
-google_analytics: UA-22750309-1
 ---
 
 ### [Warning: Site Currently Being Remodelled as of October 20, 2018]
