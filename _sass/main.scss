@@ -1,3 +1,29 @@
 .current {
-    color: green;
+    border-style: solid;
+}
+
+.navitem {
+    border-color: #fff;
+    border-radius: 25px;
+    border-width: 3px;
+
+    color: #fff;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 20px;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    width: 100px;
+}
+
+.navitem:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+#navbar {
+    // background-color: #777;
+    height: 43px;
+    padding: 10px;
+    text-align: center;
 }
