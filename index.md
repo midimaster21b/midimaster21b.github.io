@@ -3,7 +3,9 @@ layout: default
 title: Home
 ---
 
-# Hello [Warning: Site Currently Being Remodelled as of October 20, 2018]
+### [Warning: Site Currently Being Remodelled as of October 20, 2018]
+
+# Hello
 
 ## About Me
 
