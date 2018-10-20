@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+google_analytics: UA-22750309-1
 ---
 
 ### [Warning: Site Currently Being Remodelled as of October 20, 2018]
