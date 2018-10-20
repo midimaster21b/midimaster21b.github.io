@@ -21,22 +21,23 @@ Currently, I spend the majority of my time studying and working on schoolwork. I
 
 ### Languages, Markups, and Notations
 
-- C
-- Python
-- Ruby
-- Java
+- [C](https://github.com/midimaster21b?tab=repositories&q=&type=&language=c)
+- [Python](https://github.com/midimaster21b?tab=repositories&q=&type=&language=python)
+- [Ruby](https://github.com/midimaster21b?tab=repositories&q=&type=&language=ruby)
+- [Java](https://github.com/midimaster21b?tab=repositories&q=&type=&language=java)
 - C++
 - C#
-- PHP
+- [PHP](https://github.com/midimaster21b?tab=repositories&q=&type=&language=php)
 - Basic
 - VBA
 - Perl
-- Lisp
-- Verilog
-- VHDL
-- Javascript
+- [Lisp](https://github.com/midimaster21b?tab=repositories&q=&type=&language=emacs+lisp)
+- [Verilog](https://github.com/midimaster21b?tab=repositories&q=&type=&language=verilog)
+- [VHDL](https://github.com/midimaster21b?tab=repositories&q=&type=&language=vhdl)
+- [Tcl](https://github.com/midimaster21b?tab=repositories&q=&type=&language=tcl)
+- [Javascript](https://github.com/midimaster21b?tab=repositories&q=&type=&language=javascript)
 - jQuery
-- Bash shell scripting
+- [Bash shell scripting](https://github.com/midimaster21b?tab=repositories&q=&type=&language=shell)
 - SQL
 - HTML5
 - CSS3
