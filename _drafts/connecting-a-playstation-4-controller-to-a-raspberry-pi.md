@@ -1,7 +1,7 @@
 ---
 layout: post
 author: joshua
-categories: [tutorials, walkthroughs, projects]
+categories: [tutorials]
 tags: [raspberry pi, python, PS4 controller, ds4drv, linux]
 excerpt_separator: <!--more-->
 comments: true
