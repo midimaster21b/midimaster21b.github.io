@@ -86,9 +86,9 @@ description: Electrical Engineer & Software Developer
 
 # Hardware
 
-## Microcontrollers
+## Integrated Circuits
 
-### General Purpose
+### General Purpose Microcontrollers
 
 - Atmel's ATMega328P (Arduino)
 - Microchip's PIC16F84A
