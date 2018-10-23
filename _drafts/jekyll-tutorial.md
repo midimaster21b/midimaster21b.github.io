@@ -9,8 +9,8 @@ Last weekend I decided to give my outdated personal website an update and ended 
 **Table of Contents**
 1. [Jekyll Setup and Installation](#jekyll-setup-and-installation)
 1. [Using Jekyll with GitHub Pages](#using-jekyll-with-github-pages)
-1. [Jekyll Common Usage](#jekyll-common-usage)
-   - [Adding Comments](#adding-comments)
+1. [Jekyll Common Additions](#jekyll-common-additions)
+   - [Comments](#comments)
    - [Themes](#themes)
    - [Google Analytics Integration](#google-analytics-integration)
 
@@ -125,9 +125,9 @@ Using Jekyll with GitHub Pages is an easy way to statically host a website. I've
    and visit `http://127.0.0.1:4000`
 
 
-## [Jekyll Common Usage](#jekyll-common-usage)
+## [Jekyll Common Additions](#jekyll-common-additions)
 
-### [Adding Comments](#adding-comments)
+### [Comments](#comments)
 
 Comments can be added to a static site using a comment service like [disqus](https://disqus.com/) or [just-comments](https://just-comments.com/). I decided to use disqus on my site and have been happy with the service.
 
