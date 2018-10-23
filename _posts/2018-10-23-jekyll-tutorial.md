@@ -3,6 +3,7 @@ layout: post
 author: joshua
 categories: [web_development]
 tags: [jekyll, blogging, ruby, github pages]
+comments: true
 ---
 Last weekend I decided to give my outdated personal website an update and ended up trying out Jekyll. I was pleasantly surprised with Jekyll's ease of use and integration with Github pages. I figured I'd pass along my experience to assist anyone else interested in trying out Jekyll with Github pages.
 
