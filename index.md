@@ -4,8 +4,6 @@ title: Home
 description: Electrical Engineer & Software Developer
 ---
 
-### [Warning: Site Currently Being Remodelled as of October 20, 2018]
-
 # Hello
 
 My name is Joshua Edgcombe and I am an Electrical Engineering graduate student at [Grand Valley State University](http://www.gvsu.edu/) in Allendale, Michigan with a strong background in software development. I originally learned to program in 2008 and have since learned to develop software in many different programming languages in a variety of environments including web, native, system, and embedded. I also have experience with test driven development, version control, and other common development practices.
