@@ -29,3 +29,35 @@
     text-align: center;
     width: 560px;
 }
+
+@media only screen and (max-width: 64em) {
+    .navitem {
+        height: 50px;
+        width: 100%;
+    }
+
+    #navbar {
+        height: 200px;
+        width: 100%;
+    }
+
+    .page-header {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 42em) {
+    .navitem {
+        height: 50px;
+        width: 100%;
+    }
+
+    #navbar {
+        height: 200px;
+        width: 100%;
+    }
+
+    .page-header {
+        height: 360px;
+    }
+}
