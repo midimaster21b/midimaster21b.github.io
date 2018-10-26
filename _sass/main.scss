@@ -1,18 +1,20 @@
-.current {
+#current {
     border-style: solid;
+    padding: 10px 17px 10px 17px;
 }
 
 .navitem {
     border-color: #fff;
     border-radius: 25px;
     border-width: 3px;
-
     color: #fff;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 20px;
-    padding: 10px 20px 10px 20px;
+    float: left;
+    margin: 0 5px;
+    padding: 13px 20px 10px 20px;
     text-align: center;
-    width: 100px;
+    height: 100%;
+    width: 130px;
 }
 
 .navitem:hover {
@@ -22,7 +24,8 @@
 }
 
 #navbar {
-    height: 43px;
-    padding: 10px;
+    height: 50px;
+    margin: 0 auto;
     text-align: center;
+    width: 560px;
 }

@@ -27,7 +27,7 @@
 
       <nav id="navbar">
         {% for nav_item in site.data.navigation %}
-        <a class="navitem{% if page.url == nav_item.link %} current{% endif %}" href="{{ nav_item.link }}">
+        <a{% if page.url == nav_item.link %} id="current"{% endif %} class="navitem" href="{{ nav_item.link }}">
           {{ nav_item.name }}
         </a>
         {% endfor %}
