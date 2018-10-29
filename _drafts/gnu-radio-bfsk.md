@@ -36,6 +36,8 @@ A Closed system is an important step in the design and implementation of a softw
     </figure>
    </center>
 
+   The value for the variable *quad_demod_gain* should be **-samp_rate/(2*math.pi*bandwidth/8.0)**. All other variables are values that can be copied from the figure above.
+
 1. Create the flow diagram for the bit source.
 
    <center>
@@ -44,6 +46,10 @@ A Closed system is an important step in the design and implementation of a softw
       <figcaption><b>Figure 1.2</b> BFSK Source Flow Diagram for a Closed Loop System</figcaption>
     </figure>
    </center>
+
+   The repeat block repeats the byte received from the source for *interpolation* samples. **Determine an appropriate equation for the interpolation value of the repeat block using the variables you established in the previous step.**
+
+   **A)** The interpolation value of the repeat block should be **samp_rate / bits_per_second**
 
 1. Create the flow diagram for the modulator.
 
@@ -54,6 +60,12 @@ A Closed system is an important step in the design and implementation of a softw
     </figure>
    </center>
 
+   The frequencies of the top and bottom signal sources should be **fsk_center_freq - (bandwidth / 2)** and **fsk_center_freq + (bandwidth / 2)** accordingly. Using this relationship is important for allowing the values of the variable blocks to be changed in a way that affects the whole system equally. This will make more sense when you build the demodulator.
+
+   Recognizing that the byte value from the source will have an amplitude of 1:
+   1. **Why are the constant source and subtract blocks necessary for the modulator to function correctly?**
+   1. **What functional block do they correspond to in our understanding of a BFSK modulator?**
+
 1. Create the flow diagram for the channel.
 
    <center>
@@ -63,6 +75,10 @@ A Closed system is an important step in the design and implementation of a softw
     </figure>
    </center>
 
+   It's important in this implementation to include a throttle block with it's sample rate appropriately set because there is no hardware limiting the rate of bit processing. Again recognizing that the amplitude of the signal supplied from the modulator is 1:
+
+   1. **Determine an appropriate value for the Amplitude parameter of the Noise Source block such that when you enter a value in the SNR variable block you are entering the value in dB.**
+
 1. Create the flow diagram for the demodulator and comparator.
 
    <center>
@@ -71,6 +87,26 @@ A Closed system is an important step in the design and implementation of a softw
       <figcaption><b>Figure 1.5</b> BFSK Demodulator and Decoder for a Closed System</figcaption>
     </figure>
    </center>
+
+   1. The frequency translating FIR filter block should be configured with parameters:
+      - taps = `firdes.low_pass(1.0,samp_rate, bandwidth, bandwidth / 2)`
+      - center frequency = `fsk_center_freq`
+      - sample rate = `samp_rate`
+
+   1. The quadrature demod block should be configured with parameter:
+      - gain = `quad_demod_gain`
+
+   1. The QT GUI Time Sink block should be configured with parameters:
+      - Number of points: Some clever equation (I just used `2 * fsk_center_freq + bandwidth`)
+      - Sample rate: `samp_rate`
+
+   The frequency translating FIR filter block shifts the frequency located at the specified frequency down to baseband without causing aliasing to occur in addition to low pass filtering the shifted frequencies. **How do you think this block accomplishes this shift without causing aliasing to occur?**
+
+   The quadrature demodulation block basically determines what Theta value of the peak frequency supplied to it and multiplies that value by the supplied gain parameter. More information on why this works can be found [here](https://www.gnuradio.org/doc/doxygen/classgr_1_1analog_1_1quadrature__demod__cf.html).
+
+1. Run the system and verify that the bit source output and received signal line up in the GUI Time Sink block with both signals.
+
+1. Modify the amplitude of the Noise Source block. Recognizing that the modulated signal has an amplitude of 1 in the channel, **at what SNR do you start noticing bits being dropped? Compare this value with the theoretical value you calculated earlier. Do these values line up? If not, why not?**
 
 ## BFSK Modulation Part 2: An Open Loop System
 
