@@ -10,7 +10,7 @@ In this tutorial, a binary frequency shift keyed modulator and demodulator using
 
 <!--more-->
 
-# Binary Frequency Shift Keyed Modulation Using GNU Radio
+## Binary Frequency Shift Keyed Modulation Using GNU Radio
 
 ## TODO:
 
