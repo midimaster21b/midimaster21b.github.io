@@ -123,7 +123,28 @@ A Closed system is an important step in the design and implementation of a softw
      </figure>
    </center>
 
-## Sending Data
+## BFSK Modulation Part 3: Sending Data
+
+### Packetization Basics
+
+In order to send information across a channel digitally the information is generally packetized. There are number of methods available to packetize data. Generally a packet consists of three parts, a synchronization or training sequence, a header, and a payload.
+
+#### Packet Synchronization Sequence (Training Sequence)
+
+This is sent to differentiate the message from noise and provides a signal for the receiver to "lock onto" and recognize the start of a new message.
+
+Some general rules:
+
+1. Shouldn't simply repeat
+
+   Ex. 10101010
+
+   If the first two bits of the training sequence are sampled from noise immediately prior to the start of the actual training sequence, the received message will start two bits earlier than it actually should.
+
+#### Packet Header
+
+A packet header can be as simple or extensive as the protocol developer desires. A simple packet header may contain just the size of the payload that is contained in the packet while a more extensive packet header may contain information regarding the type of content, source address, destination address, and any other type of metadata desired.
+
 
 ### Encoding
 
@@ -136,18 +157,10 @@ A Closed system is an important step in the design and implementation of a softw
    <center>
      <figure>
        <img alt="BFSK Decoder Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Decoder_Flow_Diagram.png">
-       <figcaption><b>Figure 6.</b> BFSK Decoder Flow Diagram</figcaption>
+       <figcaption><b>Figure 3.1</b> BFSK Decoder Flow Diagram</figcaption>
      </figure>
    </center>
 
-### Synchronization Sequence (Training Sequence)
+# Questions
 
-This is sent to differentiate the message from noise and provides a signal for the receiver to "lock onto" and recognize the start of a new message.
-
-Some general rules:
-
-1. Shouldn't simply repeat
-
-   Ex. 10101010
-
-   If the first two bits of the training sequence are sampled from noise immediately prior to the start of the actual training sequence, the received message will start two bits earlier than it actually should.
+1. Compare the advantages and disadvantages of FSK and CPFSK.
