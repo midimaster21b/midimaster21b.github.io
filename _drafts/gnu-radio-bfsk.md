@@ -28,38 +28,68 @@ In this tutorial, a binary frequency shift keyed modulator and demodulator using
 ### Block based modulation
 
 1. Construct the flow diagram shown below to generate a test series of bits.
-   ![BFSK Source Flow Diagram](/assets/img/BFSK_GNU_Radio_Source_Flow_Diagram.png)
 
-   <center><b>Figure 1.</b> BFSK Source Flow Diagram</center>
+   <center>
+     <figure>
+       <img src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Source_Flow_Diagram.png" alt="BFSK Source Flow Diagram">
+       <figcaption><b>Figure 1.</b> BFSK Source Flow Diagram</figcaption>
+     </figure>
+   </center>
 
 1. Construct the BFSK modulator.
-   ![BFSK Modulator Flow Diagram](/assets/img/BFSK_GNU_Radio_Modulator_Flow_Diagram.png)
 
-   <center><b>Figure 2.</b> BFSK Modulator Flow Diagram</center>
+   <center>
+     <figure>
+       <img src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Modulator_Flow_Diagram.png" alt="BFSK Modulator Flow Diagram">
+       <figcaption><b>Figure 2.</b> BFSK Modulator Flow Diagram</figcaption>
+     </figure>
+   </center>
 
 1. Add the transmitter sink.
-   ![BFSK Transmitter Flow Diagram](/assets/img/BFSK_GNU_Radio_Transmitter_Flow_Diagram.png)
 
-   <center><b>Figure 3.</b> BFSK Transmitter Flow Diagram</center>
+   <center>
+     <figure>
+       <img alt="BFSK Transmitter Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Transmitter_Flow_Diagram.png">
+       <figcaption><b>Figure 3.</b> BFSK Transmitter Flow Diagram</figcaption>
+     </figure>
+   </center>
 
 ## FSK Demodulation
 
 1. Add the receiver source block and a frequency sink
-   ![BFSK Receiver Flow Diagram](/assets/img/BFSK_GNU_Radio_Receiver_Flow_Diagram.png)
 
-   <center><b>Figure 4.</b> BFSK Receiver Flow Diagram</center>
+   <center>
+     <figure>
+       <img alt="BFSK Receiver Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Receiver_Flow_Diagram.png">
+       <figcaption><b>Figure 4.</b> BFSK Receiver Flow Diagram</figcaption>
+     </figure>
+   </center>
 
 1. Add the demodulator blocks
-   ![BFSK Demodulator Flow Diagram](/assets/img/BFSK_GNU_Radio_Demodulator_Flow_Diagram.png)
 
-   <center><b>Figure 5.</b> BFSK Demodulator Flow Diagram</center>
-
-1. Add the decoder blocks
-   ![BFSK Decoder Flow Diagram](/assets/img/BFSK_GNU_Radio_Decoder_Flow_Diagram.png)
-
-   <center><b>Figure 6.</b> BFSK Decoder Flow Diagram</center>
+   <center>
+     <figure>
+       <img alt="BFSK Demodulator Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Demodulator_Flow_Diagram.png">
+       <figcaption><b>Figure 5.</b> BFSK Demodulator Flow Diagram</figcaption>
+     </figure>
+   </center>
 
 ## Sending Data
+
+### Encoding
+
+
+
+### Decoding
+
+1. Add the decoder blocks
+
+   <center>
+     <figure>
+       <img alt="BFSK Decoder Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Decoder_Flow_Diagram.png">
+       <figcaption><b>Figure 6.</b> BFSK Decoder Flow Diagram</figcaption>
+     </figure>
+   </center>
 
 ### Synchronization Sequence (Training Sequence)
 
