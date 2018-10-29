@@ -23,7 +23,56 @@ In this tutorial, a binary frequency shift keyed modulator and demodulator using
    1. Double click on the **Options** block
    1. Enter a new value for the **Canvas Size** option (e.g. *[2000,2000]*)
 
-## FSK Modulation
+## BFSK Modulation Part 1: A Closed Loop System
+
+A Closed system is an important step in the design and implementation of a software-designed radio communication system. It allows the engineer to test the system in a closed environment, eliminating many of the environmental variables that come with the actual implemenation like channel noise and frequency drift. In this part we will be developing a BFSK modulator and demodulator with configurable additive AWGN for the channel.
+
+1. Create the variable blocks for this design.
+
+   <center>
+    <figure>
+      <img src="/assets/img/GNU_Radio/BFSK/Closed_System/BFSK_Variable_Blocks.png" alt="BFSK Variable Blocks">
+      <figcaption><b>Figure 1.1</b> BFSK Variable Blocks for a Closed Loop System</figcaption>
+    </figure>
+   </center>
+
+1. Create the flow diagram for the bit source.
+
+   <center>
+    <figure>
+      <img src="/assets/img/GNU_Radio/BFSK/Closed_System/BFSK_Source_Flow_Diagram.png" alt="BFSK Source Flow Diagram">
+      <figcaption><b>Figure 1.2</b> BFSK Source Flow Diagram for a Closed Loop System</figcaption>
+    </figure>
+   </center>
+
+1. Create the flow diagram for the modulator.
+
+   <center>
+    <figure>
+      <img src="/assets/img/GNU_Radio/BFSK/Closed_System/BFSK_Modulator_Flow_Diagram.png" alt="BFSK Modulator Flow Diagram">
+      <figcaption><b>Figure 1.3</b> BFSK Modulator Flow Diagram for a Closed System</figcaption>
+    </figure>
+   </center>
+
+1. Create the flow diagram for the channel.
+
+   <center>
+    <figure>
+      <img src="/assets/img/GNU_Radio/BFSK/Closed_System/BFSK_Channel_Flow_Diagram.png" alt="BFSK Channel Flow Diagram">
+      <figcaption><b>Figure 1.4</b> BFSK Channel Flow Diagram for a Closed System</figcaption>
+    </figure>
+   </center>
+
+1. Create the flow diagram for the demodulator and comparator.
+
+   <center>
+    <figure>
+      <img src="/assets/img/GNU_Radio/BFSK/Closed_System/BFSK_Demodulator_Flow_Diagram.png" alt="BFSK Demodulator And Decoder Flow Diagram">
+      <figcaption><b>Figure 1.5</b> BFSK Demodulator and Decoder for a Closed System</figcaption>
+    </figure>
+   </center>
+
+## BFSK Modulation (Open System)
 
 ### Block based modulation
 
