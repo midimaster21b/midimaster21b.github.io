@@ -16,12 +16,16 @@ In this tutorial, a binary frequency shift keyed modulator and demodulator using
 
 1. Specify which values should be specified as variables
 1. Specify any equations for, and involving, the variables
+1. Fix Part 2, Figure 1 (BPSK -> BFSK)
+1. Remove unnecessary/unused blocks (especially GUI elements)
+1. Add variable blocks for open loop system Tx and Rx
+1. Create a table of values for figure 1.1
 
 ## Helpful Tips
 
 1. Increase the working space in GNU Radio Companion
    1. Double click on the **Options** block
-   1. Enter a new value for the **Canvas Size** option (e.g. *[2000,2000]*)
+   1. Enter a new value for the **Canvas Size** option as *[width, height]* (e.g. *[2000,2000]* )
 
 ## BFSK Modulation Part 1: A Closed Loop System
 
