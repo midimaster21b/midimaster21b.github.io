@@ -26,6 +26,8 @@ In this tutorial, a binary frequency shift keyed modulator and demodulator using
 1. Increase the working space in GNU Radio Companion
    1. Double click on the **Options** block
    1. Enter a new value for the **Canvas Size** option as *[width, height]* (e.g. *[2000,2000]* )
+1. Sometimes a parameter requires an int to be supplied you need to perform division in the equation
+   1. Cast the value to an int (e.g. `10 / 3` => `int(10 / 3)` or `YOUR EQUATION HERE` => `int(YOUR EQUATION HERE)`)
 
 ## BFSK Modulation Part 1: A Closed Loop System
 
@@ -226,7 +228,6 @@ Some general rules:
 #### Packet Header
 
 A packet header can be as simple or extensive as the protocol developer desires. A simple packet header may contain just the size of the payload that is contained in the packet while a more extensive packet header may contain information regarding the type of content, source address, destination address, and any other type of metadata desired.
-
 
 ### Encoding
 
