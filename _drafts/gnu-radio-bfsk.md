@@ -72,7 +72,7 @@ A Closed system is an important step in the design and implementation of a softw
     </figure>
    </center>
 
-## BFSK Modulation (Open System)
+## BFSK Modulation Part 2: An Open Loop System
 
 ### Block based modulation
 
@@ -81,7 +81,7 @@ A Closed system is an important step in the design and implementation of a softw
    <center>
      <figure>
        <img src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Source_Flow_Diagram.png" alt="BFSK Source Flow Diagram">
-       <figcaption><b>Figure 1.</b> BFSK Source Flow Diagram</figcaption>
+       <figcaption><b>Figure 2.1</b> BFSK Source Flow Diagram</figcaption>
      </figure>
    </center>
 
@@ -90,7 +90,7 @@ A Closed system is an important step in the design and implementation of a softw
    <center>
      <figure>
        <img src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Modulator_Flow_Diagram.png" alt="BFSK Modulator Flow Diagram">
-       <figcaption><b>Figure 2.</b> BFSK Modulator Flow Diagram</figcaption>
+       <figcaption><b>Figure 2.2</b> BFSK Modulator Flow Diagram</figcaption>
      </figure>
    </center>
 
@@ -99,7 +99,7 @@ A Closed system is an important step in the design and implementation of a softw
    <center>
      <figure>
        <img alt="BFSK Transmitter Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Transmitter_Flow_Diagram.png">
-       <figcaption><b>Figure 3.</b> BFSK Transmitter Flow Diagram</figcaption>
+       <figcaption><b>Figure 2.3</b> BFSK Transmitter Flow Diagram</figcaption>
      </figure>
    </center>
 
@@ -110,7 +110,7 @@ A Closed system is an important step in the design and implementation of a softw
    <center>
      <figure>
        <img alt="BFSK Receiver Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Receiver_Flow_Diagram.png">
-       <figcaption><b>Figure 4.</b> BFSK Receiver Flow Diagram</figcaption>
+       <figcaption><b>Figure 2.4</b> BFSK Receiver Flow Diagram</figcaption>
      </figure>
    </center>
 
@@ -119,7 +119,7 @@ A Closed system is an important step in the design and implementation of a softw
    <center>
      <figure>
        <img alt="BFSK Demodulator Flow Diagram" src="/assets/img/GNU_Radio/BFSK/BFSK_GNU_Radio_Demodulator_Flow_Diagram.png">
-       <figcaption><b>Figure 5.</b> BFSK Demodulator Flow Diagram</figcaption>
+       <figcaption><b>Figure 2.5</b> BFSK Demodulator Flow Diagram</figcaption>
      </figure>
    </center>
 
